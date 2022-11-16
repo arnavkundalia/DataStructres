@@ -39,7 +39,14 @@ void display(){
         cout<<temp->data<<" ";
         temp = temp->next;
     }
+    cout<<endl;
 }
+
+void delete_first(){
+    head = head->next;
+}
+
+
 
 int main(){
     int n,j;
@@ -52,6 +59,5 @@ int main(){
         insert(j);   
     }
 
-    display();
     return 0;
  }
